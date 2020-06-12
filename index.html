@@ -18,8 +18,8 @@
         </div>
         <div class="searchbar">
             <img class="icon" src="./style/images/icons/search.svg">
-            <p class="placeholder text-grey">Buscar clientes por DNI</p>
-
+            <input type="text" placeholder="Buscar clientes por DNI" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar clientes por DNI'" class="placeholder text-grey">
+            <img class="icon-close" src="./style/images/icons/close.svg">
         </div>
         <div class="links-right">
             <img class="profile-pic" src="style/images/profile.jpeg">
@@ -31,12 +31,23 @@
             <img class="icon" src="style/images/icons/settings.svg">
         </div>
     </section>
+
+    <!-- TOASTS -->
     <!-- <div class="toast toast-resting">
         <p>Encontrá clientes ingresando su DNI en el buscador</p>
     </div> -->
 
+    <!-- <div class="toast toast-error">
+        <p>No encontramos ningún cliente con ese DNI</p>
+    </div> -->
+
+    <!-- ILLUSTRATIONS -->
     <!-- <div class="illustration">
         <img src="style/images/machines.png">
+    </div> -->
+
+    <!-- <div class="illustration">
+        <img src="style/images/couch.png">
     </div> -->
 
     <div class="content">
@@ -88,6 +99,7 @@
                     <span class="tag tag-yellow text-yellow">En cola de exportación</span>
                 </div>
                 <textarea rows="row" class="comments"></textarea>
+                <button class="inline-button">Guardar comentarios</button>
             </div>
         </div>
         <!-- columna derecha -->
@@ -122,7 +134,7 @@
                     <p class="row-key">9 3786487 3789278</p>
                 </div>
             </div>
-            <!-- acá viene otro bloque -->
+            <!-- otro bloque -->
             <div class="data-block">
                 <div class="subtitle">
                     <h2>Datos de la tarjeta</h2>
@@ -135,7 +147,25 @@
                     <p>Mostrar en mapa</p>
                 </button>
             </div>
+            <!-- archivos -->
+            <div class="data-block">
+                <div class="subtitle">
+                    <h2>Archivos adjuntos</h2>
+                </div>
+                <div class="row-photos">
+                    <div class="photo-id">
+                        <img src="">
+                    </div>
+                    <div class="photo-id">
+                        <img src="">
+                    </div>
+                    <div class="photo-selfie">
+                        <img src="">
+                    </div>
+                </div>
 
+            </div>
+            <!-- otro bloque -->
             <div class="data-block">
                 <div class="subtitle">
                     <h2>Datos de la tarjeta</h2>
