@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Validador</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <section class="navigation" id="navigation">
+        <div class="logo">
+            <img src="./style/images/socialnet.svg">
+        </div>
+        <div class="searchbar">
+            <img class="icon" src="./style/images/icons/search.svg">
+            <input type="text" placeholder="Buscar clientes por DNI" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar clientes por DNI'" class="placeholder text-grey">
+            <img class="icon-close" src="./style/images/icons/close.svg">
+        </div>
+        <div class="links-right">
+            <img class="profile-pic" src="style/images/profile.jpeg">
+            <div class="profile-name">
+                <p> Jane Cooper</p>
+                <img class="icon" src="./style/images/icons/dropdown.svg">
+            </div>
+            <span class="divider"></span>
+            <img class="icon" src="style/images/icons/settings.svg">
+        </div>
+    </section>
+
+
+    <!-- <div class="container">
+    </div> -->
+    <div class="content">
+        <div class="block-full-width surface">
+            <div class="main-title">
+                <h1>Cliente</h1>
+            </div>
+            <div class="data-block">
+                <div class="row-photos-big">
+                    <div class="photo-id">
+                        <img src="">
+                    </div>
+                    <div class="photo-id">
+                        <img src="">
+                    </div>
+                    <div class="photo-selfie">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+            <div class="data-block">
+                <div class="subtitle">
+                    <h2>Datos de la tarjeta</h2>
+                </div>
+                <div class="row-text">
+                    <p class="row-title">Número de tarjeta</p>
+                    <p class="row-key">9 3786487 3789278</p>
+                </div>
+                <div class="row-text">
+                    <p class="row-title">Número de tarjeta</p>
+                    <p class="row-key">9 3786487 3789278</p>
+                </div>
+                <div class="row-text">
+                    <p class="row-title">Número de tarjeta</p>
+                    <p class="row-key">9 3786487 3789278</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='button-navigation container'>
+        <button class="button big-btn col-1" id="cancel"><p>Salir</p></button>
+        <button class='button big-btn col-1' value='Rechazar' id="reject"><p>Rechazar</p></button>
+        <button class='button big-btn col-2' value='Aprobar' id='approve'><p>Aprobar</p></button>
+    </div>

@@ -213,6 +213,11 @@ label,
     padding: 48px 0px;
 }
 
+.container {
+    width: 880px;
+    margin: auto;
+}
+
 .surface {
     background: #FFFFFF;
     /* grey */
@@ -237,6 +242,11 @@ label,
 
 .surface.second {
     margin-top: 16px;
+}
+
+.block-full-width {
+    width: 880px;
+    margin: auto;
 }
 
 
@@ -309,31 +319,38 @@ label,
     font-weight: 600;
 }
 
-.row-photos {
+.row-photos-small {
     display: flex;
     justify-content: space-between;
+    height: 126px;
     padding: 16px 0px;
+}
+
+.row-photos-big {
+    display: flex;
+    justify-content: space-between;
+    height: 186px;
+    padding: 16px 60px 16px 0px;
 }
 
 
 /* photos */
 
 .photo-id {
-    height: 98px;
-    width: 160px;
+    width: 32%;
     background: url() #fafafa;
     border: 1px solid var(--lines)
 }
 
 .photo-selfie {
-    height: 98px;
-    width: 98px;
+    width: 20%;
     background: url() #fafafa;
     border: 1px solid var(--lines)
 }
 
-.photo-id:hover,
-.photo-selfie:hover {}
+
+/* .photo-id:hover,
+.photo-selfie:hover {} */
 
 
 /* button */
@@ -341,8 +358,25 @@ label,
 .button {
     width: 100%;
     border: 1px solid var(--lines);
-    height: 40px;
     color: var(--blue);
+    transition: 0.3s;
+}
+
+.small-btn {
+    margin-top: 8px;
+    height: 40px;
+}
+
+.big-btn {
+    height: 54px;
+}
+
+.col-2 {
+    width: 64%;
+}
+
+.col-1 {
+    width: 16%;
 }
 
 .button:hover {
@@ -365,6 +399,42 @@ label,
 
 .inline-button:hover {
     opacity: 80%;
+}
+
+.button-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reject {
+    color: #FE4E40;
+    border: 1px solid #FE4E40;
+}
+
+#approve {
+    color: #149F22;
+    border: 1px solid #149F22;
+}
+
+#cancel {
+    /* border: transparent; */
+    background: transparent;
+}
+
+#cancel:hover {
+    opacity: 80%;
+}
+
+#reject:hover {
+    border: 1px solid #FE4E40;
+    color: #FE4E40;
+    background-color: #FFDAD7;
+}
+
+#approve:hover {
+    border: 1px solid #149F22;
+    color: #149F22;
+    background-color: #E4F0E5;
 }
 
 
