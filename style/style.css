@@ -403,6 +403,11 @@ label,
     background-color: #fafafa;
 }
 
+.button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .button p {
     font-weight: 600;
 }
